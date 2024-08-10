@@ -159,7 +159,7 @@ element.appendChild(element3);
 const cop=document.querySelector('.align');
 cop.addEventListener('click',function clear(){
     right.innerHTML="";
-    right.innerHTML="<img src='/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg'/>";
+    right.innerHTML="<img src='./assets/images/illustration-empty.svg'/>";
     let element=document.createElement('h4');
     element.setAttribute('class','result');
     element.textContent="Results shown here";
