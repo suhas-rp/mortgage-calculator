@@ -1,0 +1,269 @@
+html{
+    box-sizing: border-box;
+    padding:110px;
+    background-color: hsl(202, 86%, 94%);
+    
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+h4{
+    margin:0;
+    font-size: 1.4rem;
+}
+.align{
+    text-align: right;
+    position: relative;
+    top:-21px;
+    margin:0;
+    font-size:0.9rem;
+    
+}
+.align:hover{
+    cursor: pointer;
+    color:hsl(200, 26%,40%);
+}
+.container{
+    
+    overflow: hidden;
+    vertical-align: middle;
+    align-self: center;
+    
+    display:flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 1px 11px -1px rgba(0,0,0,0.84);
+}
+.Euro{
+    display: flex;
+}
+.getme{
+    display: flex;
+    flex-flow: row-reverse;
+    
+}
+
+.e{
+    flex-basis:30%;
+    margin:0;
+    text-align: center;
+    padding-top:10px;
+    border:0.8px solid black;
+    border-right:0;
+    height:35px;
+    background-color: hsl(202, 86%, 94%);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color:hsl(201, 74%, 29%);
+    font-weight: 700;
+    z-index: 2;
+}
+.left,.right{
+    
+    flex-basis: 50%;
+    
+    padding:30px;
+}
+.values{
+    display: flex;
+
+}
+.term,.rate{
+    flex-basis:50%;
+}
+input{
+   width:100%;
+    
+}
+.check{
+    display:flex;
+    flex-direction:column;
+
+}
+.box1,.box2{
+    display:flex;
+   box-sizing: border-box;
+   border-bottom-left-radius: 5px;
+   overflow: hidden;
+}
+
+.inside{
+    align-self: center;
+   
+    height:100%;
+    padding-top: 10px;
+    margin-left: 10px;
+    
+}
+.checkbox{
+    
+    flex-basis: 5%;
+    height:100%;
+    align-items: center;
+    
+    
+}
+input[type="radio"]
+{
+ height:15px;
+ width:15px;
+
+    position:relative;
+    top:10px;
+}
+.right{
+    border-bottom-left-radius: 50px;
+    background-color: hsl(202, 55%, 16%);
+    width:auto;
+}
+img{
+    padding:50px;
+    padding-left: 100px;
+    padding-bottom:0px;
+}
+.result{
+    color:white;
+    text-align: center;
+}
+.small-text{
+    color:hsl(200, 26%, 54%);
+}
+
+.box1,.box2{
+    height:40px;
+    text-align: center;
+    border:1px solid black;
+    margin:4px;
+}
+input[type="number"]
+{
+    
+    border-radius: 0;
+    border:0.7px solid black;
+    font-weight: 700;
+    
+    font-family: 'Courier New', Courier, monospace; /* Use a monospace font */
+}
+.Euro input[type="number"]{
+    border-right: 0;
+}
+.getme input[type="number"]{
+    border-left: 0;
+    border-right: 0.7px solid black;
+}
+input[type="number"]:focus {
+    outline-width: 0.5px;
+    outline-color: hsl(61, 70%, 52%);
+    outline-style: solid;
+    border:none;
+    
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type="number"]:focus ~ p{
+    background-color: hsl(61, 70%, 52%);
+    border: 1px solid hsl(61, 70%, 52%);
+    
+}
+
+.term{
+    margin-right:2%;
+    
+}
+.rate{
+    margin-left:2%;
+}
+.Euro{
+    margin-left: 2%;
+    
+}
+button{
+    margin-top:8%;
+    margin-left:15%;
+    transform: scale(1.5);
+    border-radius: 15px;
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 5px;
+    background-color: hsl(61, 70%, 52%);
+    border:none;    
+    width:50%;
+    height:6%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(61, 70%, 40%);
+}
+.f{
+    border-radius: 0;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+    font-size: 0.7rem;
+    border:0.8px solid black;
+    border-left:0;
+   padding: 5px;
+   padding-top: 10px;
+    color:hsl(201, 74%, 29%);
+    font-weight: 700;
+}
+.secres{
+    color:white;
+}
+.right-box{
+    border-top: 4px solid hsl(61, 70%, 52%);
+    background-color: hsl(202, 55%, 11%);;
+
+padding: 20px;
+border-radius: 2px ;
+}
+.top-right-part{
+    background-color: hsl(202, 55%, 11%);
+    border-bottom:0.2px solid hsl(200, 26%, 70%);
+    
+}
+.top-right-part h1{
+    margin-top:0;
+    color: hsl(61, 70%, 52%);
+    border-bottom: 10px;
+}
+.top-right-part p{
+    margin-bottom:0;
+    margin-top:2px;
+
+}
+.g{
+    flex-basis: 8%;
+    
+}
+.just{
+margin-top:20px;
+border: 0.8px solid black;
+}
+.right h4{
+    color:white;
+}
+.jk{
+    margin:0;
+    color:red;
+    margin-top:4px;
+    position: relative;
+    left:10px;
+    font-size:0.7rem;
+}
+.jk1{
+    display: inline-block;
+    width:50%;
+    
+    position: relative;
+    
+}
+.jk3{
+    position: absolute;
+    left: 31%;
+    display: inline-block;
+}

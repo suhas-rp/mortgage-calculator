@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/mortgage-repayment-calculator-main/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <div class="top-part">
+  <h4>Mortgage Calculator</h4>
+  <p class="small-text align"><u>Clear All</u></p>
+          </div>
+          
+  <p class="small-text">Mortgage Amount</p>
+          <div class="Euro getme">
+            <input type="number" name="amount" value="" required>
+            <p class="e g">€</p>
+            
+            </div>
+           
+        <div class="values">
+            <div class="term">
+          <p class="small-text">Mortgage Term</p>
+          <div class="Euro">
+          <input type="number"name="term" value="" class="right-input" step="0.01">
+          <p class="e f i">years</p>
+          </div>
+              </div>
+              <div class="rate">
+                <p class="small-text">Interest Rate</p>
+                <div class="Euro">
+            <input type="number" name="rate" value="" class="left-input" step="0.01">
+            <p class="e f j">%</p>
+
+                  </div>
+          </div>
+        </div>
+       
+          
+         <p class="small-text par"> Mortgage Type</p>
+       
+         <div class="check">
+          <form >
+            <div class="box1"> 
+              <input type="radio" name="options" value="repayment" class="checkbox">  
+              <p class="inside">Repayment</p>
+            </div>
+            <div class="box2">
+              <input type="radio" name="options" value="interest" class="checkbox">
+                <p class="inside">Interest Only</p>
+            </div>
+            </form>
+        </div>
+  <button onclick="change()">Calculate Repayments</button>
+      </div>
+  <!-- Empty results start -->
+      <div class="right">
+            <img src="/mortgage-repayment-calculator-main/assets/images/illustration-empty.svg">
+       <h4 class="result"> Results shown here</h4>
+
+  <p class="small-text">Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be.</p>
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+          </div>
+       
+      </div>
+  <!-- Completed results end -->
+  
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
